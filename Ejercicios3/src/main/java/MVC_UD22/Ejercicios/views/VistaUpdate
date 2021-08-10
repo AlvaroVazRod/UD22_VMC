@@ -28,6 +28,7 @@ public class VistaUpdate extends JFrame {
 	private JTextField textField_3;
 	private JTextField textField_4;
 	private JTextField textField_5;
+	private JButton btnNewButton_1;
 
 	/**
 	 * Launch the application.
@@ -86,7 +87,14 @@ public class VistaUpdate extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		contentPane.add(btnNewButton, "cell 6 7,alignx left,aligny top");
+		contentPane.add(btnNewButton, "cell 4 7,alignx left,aligny top");
+		
+		btnNewButton_1 = new JButton("Volver");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		contentPane.add(btnNewButton_1, "cell 6 7");
 	}
 
 }
