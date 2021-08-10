@@ -50,11 +50,7 @@ public class ControladorInsert implements ActionListener{
 	        DateFormat formatter = new SimpleDateFormat("dd-MM-yyyy,HH:mm:ss aaa");
 	        return (Date) formatter.parse(date);
 	    } catch (ParseException e) {
-<<<<<<< Updated upstream
-	        e.printStackTrace();
-=======
 	       JOptionPane.showMessageDialog(null, "El formato de la fecha es incorrecto...");;
->>>>>>> Stashed changes
 	    }
 	    return null;
 	}
@@ -93,9 +89,6 @@ public class ControladorInsert implements ActionListener{
 			vista.direccion.setText("");
 			vista.dni.setText("");
 			vista.fecha.setText("");
-<<<<<<< Updated upstream
-		}	
-=======
 		}else if (vista.cancelar == evento.getSource())
 		{
 			vista.nombre.setText("");
@@ -105,6 +98,5 @@ public class ControladorInsert implements ActionListener{
 			vista.fecha.setText("");
 			vista.setVisible(false);
 		}
->>>>>>> Stashed changes
 	}
 }

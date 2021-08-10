@@ -1,12 +1,5 @@
 package MVC_UD22.Ejercicios.views;
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-public class Vista {
-
-=======
-=======
->>>>>>> Stashed changes
 
 import javax.swing.JFrame;
 import javax.swing.JTable;
@@ -47,5 +40,4 @@ public class Vista extends JFrame{
 		delete.setBounds(495, 148, 66, 21);
 		this.getContentPane().add(delete);
 	}
->>>>>>> Stashed changes
 }

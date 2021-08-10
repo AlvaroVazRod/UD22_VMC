@@ -41,10 +41,6 @@ public class Controlador implements ActionListener{
 			ControladorInsert cInsert = new ControladorInsert(this.modelo, vInsert);
 			cInsert.iniciarVista();
 		}
-<<<<<<< Updated upstream
-		/***
-=======
->>>>>>> Stashed changes
 		else
 		{
 			if(vista.update == evento.getSource())
@@ -56,16 +52,6 @@ public class Controlador implements ActionListener{
 			else
 			{
 				if(vista.delete == evento.getSource())
-<<<<<<< Updated upstream
-				{
-					VistaDelete vDelete = new VistaDelete();
-					ControladorDelete cDelete = new ControladorDelete(this.modelo, vDelete);
-					cDelete.iniciarVista();
-				}
-			}
-		}
-		***/
-=======
 				{ 
 					int id = 0;
 					modelo.deleteRecord("cliente", id );
@@ -73,7 +59,6 @@ public class Controlador implements ActionListener{
 				}
 			}
 		}
->>>>>>> Stashed changes
 	}
 	
 }
