@@ -8,6 +8,6 @@ import MVC_UD22.Ejercicios.views.Vista;
  */
 public class App {
 	public static void main(String[] args) {
-
+		Vista vista = new Vista();
 	}
 }
