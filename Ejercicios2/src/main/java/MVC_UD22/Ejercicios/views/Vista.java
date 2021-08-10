@@ -1,9 +1,12 @@
 package MVC_UD22.Ejercicios.views;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 public class Vista {
 
 =======
+=======
+>>>>>>> Stashed changes
 
 import javax.swing.JFrame;
 import javax.swing.JTable;

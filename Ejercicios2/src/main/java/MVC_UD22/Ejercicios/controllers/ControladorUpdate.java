@@ -13,17 +13,17 @@ import javax.swing.JOptionPane;
 import MVC_UD22.Ejercicios.models.Modelo;
 import MVC_UD22.Ejercicios.views.*;
 
-public class ControladorInsert implements ActionListener{
+public class ControladorUpdate implements ActionListener{
 
 	private Modelo modelo;
-	private VistaInsert vista;
+	private VistaUpdate vista;
 	private String nombre;
 	private String apellidos;
 	private String direccion;
 	private int dni;
 	private Date data;
 	
-	public ControladorInsert(Modelo mod, VistaInsert vis)
+	public ControladorUpdate(Modelo mod, VistaUpdate vis)
 	{
 		this.modelo = mod;
 		this.nombre = "";
@@ -32,36 +32,30 @@ public class ControladorInsert implements ActionListener{
 		this.dni = 0;
 		this.data = null;
 		this.vista=vis;
-		this.vista.aceptar.addActionListener(this);
+		this.vista.cambiar.addActionListener(this);
 		this.vista.cancelar.addActionListener(this);
 	}
 
 	public void iniciarVista()
 	{
-		vista.setTitle("Insertar cliente");
+		vista.setTitle("Actualizar Cliente");
 		vista.pack();
 		vista.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		vista.setLocationRelativeTo(null);
 		vista.setVisible(true);
 	}
-	
 	private Date convertToDate(String date) {
 	    try {
 	        DateFormat formatter = new SimpleDateFormat("dd-MM-yyyy,HH:mm:ss aaa");
 	        return (Date) formatter.parse(date);
 	    } catch (ParseException e) {
-<<<<<<< Updated upstream
-	        e.printStackTrace();
-=======
 	       JOptionPane.showMessageDialog(null, "El formato de la fecha es incorrecto...");;
->>>>>>> Stashed changes
 	    }
 	    return null;
 	}
-	
 	public void actionPerformed(ActionEvent evento)
 	{
-		if(vista.aceptar == evento.getSource())
+		if(vista.cambiar == evento.getSource())
 		{
 			
 			if(!"".equals(vista.nombre.getText())) {
@@ -87,15 +81,12 @@ public class ControladorInsert implements ActionListener{
 			{
 				data = convertToDate(vista.fecha.getText());
 			}
-			modelo.insertData("Empresa","cliente", nombre, apellidos, direccion, dni, data);
+			modelo.insertData("Empresa","cliente", nombre, apellidos, direccion, dni, data); //esto hay que hacer un metodo para updatear
 			vista.nombre.setText("");
 			vista.apellidos.setText("");
 			vista.direccion.setText("");
 			vista.dni.setText("");
 			vista.fecha.setText("");
-<<<<<<< Updated upstream
-		}	
-=======
 		}else if (vista.cancelar == evento.getSource())
 		{
 			vista.nombre.setText("");
@@ -105,6 +96,5 @@ public class ControladorInsert implements ActionListener{
 			vista.fecha.setText("");
 			vista.setVisible(false);
 		}
->>>>>>> Stashed changes
 	}
 }

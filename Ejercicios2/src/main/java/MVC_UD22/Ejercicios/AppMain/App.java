@@ -1,6 +1,7 @@
 package MVC_UD22.Ejercicios.AppMain;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /**
  * Hello world!
  *
@@ -12,6 +13,8 @@ public class App
         System.out.println( "Hello World!" );
     }
 =======
+=======
+>>>>>>> Stashed changes
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import MVC_UD22.Ejercicios.controllers.Controlador;
@@ -38,5 +41,8 @@ public class App {
   Controlador controlador = new Controlador(modelo, vista);
   controlador.iniciarVista();
  }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
