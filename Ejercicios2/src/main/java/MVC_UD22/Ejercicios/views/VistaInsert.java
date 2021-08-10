@@ -64,7 +64,7 @@ public class VistaInsert extends JFrame{
 		
 		JLabel lblNewLabel_2 = new JLabel("Direccion:");
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_2.setBounds(41, 155, 61, 13);
+		lblNewLabel_2.setBounds(41, 155, 84, 13);
 		getContentPane().add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("DNI");
